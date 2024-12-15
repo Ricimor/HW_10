@@ -1,0 +1,25 @@
+    1  git config --global user name "Oleksandr Denysiuk"
+    2  git config --global user.name "Oleksandr Denysiuk"
+    3  git config --global user.email denysiukolex@gmail.com
+    4  git clone https://github.com/Ricimor/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7  nano .gitignore
+    8  git status
+    9  git add .gitignore
+   10  git commit -m "Task1"
+   11  touch main_test.txt
+   12  git add main_test.txt
+   13  git commit -m "Task2"
+   14  git checkout -b develop
+   15  touch develop_test.txt
+   16  git add develop_test.txt
+   17  git commit -m "Task3.4"
+   18  nano develop_test.txt
+   19  git status
+   20  git add develop_test.txt
+   21  git commit -m "Task3.8"
+   22  git checkout main
+   23  git merge develop
+   24  git log
+   25  history > command_list.csv
